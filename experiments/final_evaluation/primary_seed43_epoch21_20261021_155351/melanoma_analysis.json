@@ -1,0 +1,13 @@
+{
+  "support": 163,
+  "sensitivity": 0.6257668711656442,
+  "true_positives": 102,
+  "false_negatives": 61,
+  "false_positives": 109,
+  "correct_and_accepted": 87,
+  "accepted_with_error": 49,
+  "rejected_total": 27,
+  "rejected_correct_classification": 15,
+  "rejected_incorrect_classification": 12,
+  "abstention_counted_as_correct": false
+}

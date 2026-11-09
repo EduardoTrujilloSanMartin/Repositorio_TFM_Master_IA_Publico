@@ -1,0 +1,155 @@
+variable,group,class,images,proportion_within_group,lesions
+age_group,<40,akiec,0,0.0,0
+age_group,<40,bcc,2,0.006896551724137931,1
+age_group,<40,bkl,9,0.03103448275862069,6
+age_group,<40,df,4,0.013793103448275862,2
+age_group,<40,mel,9,0.03103448275862069,5
+age_group,<40,nv,264,0.9103448275862069,184
+age_group,<40,vasc,2,0.006896551724137931,2
+age_group,40-59,akiec,15,0.0228310502283105,11
+age_group,40-59,bcc,12,0.0182648401826484,8
+age_group,40-59,bkl,26,0.0395738203957382,20
+age_group,40-59,df,7,0.0106544901065449,5
+age_group,40-59,mel,60,0.091324200913242,31
+age_group,40-59,nv,522,0.7945205479452054,452
+age_group,40-59,vasc,15,0.0228310502283105,11
+age_group,>=60,akiec,30,0.054844606946983544,23
+age_group,>=60,bcc,67,0.12248628884826325,40
+age_group,>=60,bkl,121,0.22120658135283364,81
+age_group,>=60,df,7,0.012797074954296161,4
+age_group,>=60,mel,94,0.17184643510054845,56
+age_group,>=60,nv,226,0.41316270566727603,172
+age_group,>=60,vasc,2,0.003656307129798903,2
+age_group,unknown,akiec,0,0.0,0
+age_group,unknown,bcc,0,0.0,0
+age_group,unknown,bkl,2,0.4,2
+age_group,unknown,df,0,0.0,0
+age_group,unknown,mel,0,0.0,0
+age_group,unknown,nv,3,0.6,3
+age_group,unknown,vasc,0,0.0,0
+sex,female,akiec,16,0.023564064801178203,11
+sex,female,bcc,25,0.036818851251840944,14
+sex,female,bkl,73,0.10751104565537556,49
+sex,female,df,12,0.017673048600883652,8
+sex,female,mel,72,0.10603829160530191,41
+sex,female,nv,465,0.6848306332842415,366
+sex,female,vasc,16,0.023564064801178203,12
+sex,male,akiec,29,0.03571428571428571,23
+sex,male,bcc,56,0.06896551724137931,35
+sex,male,bkl,83,0.1022167487684729,58
+sex,male,df,6,0.007389162561576354,3
+sex,male,mel,91,0.11206896551724138,51
+sex,male,nv,544,0.6699507389162561,441
+sex,male,vasc,3,0.003694581280788177,3
+sex,unknown,akiec,0,0.0,0
+sex,unknown,bcc,0,0.0,0
+sex,unknown,bkl,2,0.25,2
+sex,unknown,df,0,0.0,0
+sex,unknown,mel,0,0.0,0
+sex,unknown,nv,6,0.75,4
+sex,unknown,vasc,0,0.0,0
+localization,abdomen,akiec,0,0.0,0
+localization,abdomen,bcc,5,0.034722222222222224,2
+localization,abdomen,bkl,7,0.04861111111111111,6
+localization,abdomen,df,0,0.0,0
+localization,abdomen,mel,3,0.020833333333333332,1
+localization,abdomen,nv,126,0.875,102
+localization,abdomen,vasc,3,0.020833333333333332,2
+localization,acral,akiec,0,0.0,0
+localization,acral,bcc,0,0.0,0
+localization,acral,bkl,0,0.0,0
+localization,acral,df,0,0.0,0
+localization,acral,mel,0,0.0,0
+localization,acral,nv,1,1.0,1
+localization,acral,vasc,0,0.0,0
+localization,back,akiec,8,0.023121387283236993,6
+localization,back,bcc,26,0.07514450867052024,17
+localization,back,bkl,30,0.08670520231213873,21
+localization,back,df,0,0.0,0
+localization,back,mel,47,0.13583815028901733,28
+localization,back,nv,230,0.6647398843930635,162
+localization,back,vasc,5,0.014450867052023121,2
+localization,chest,akiec,1,0.01694915254237288,1
+localization,chest,bcc,12,0.2033898305084746,8
+localization,chest,bkl,5,0.0847457627118644,4
+localization,chest,df,0,0.0,0
+localization,chest,mel,13,0.22033898305084745,7
+localization,chest,nv,27,0.4576271186440678,17
+localization,chest,vasc,1,0.01694915254237288,1
+localization,ear,akiec,0,0.0,0
+localization,ear,bcc,0,0.0,0
+localization,ear,bkl,0,0.0,0
+localization,ear,df,0,0.0,0
+localization,ear,mel,0,0.0,0
+localization,ear,nv,5,1.0,2
+localization,ear,vasc,0,0.0,0
+localization,face,akiec,14,0.14,11
+localization,face,bcc,17,0.17,10
+localization,face,bkl,29,0.29,18
+localization,face,df,0,0.0,0
+localization,face,mel,20,0.2,11
+localization,face,nv,19,0.19,11
+localization,face,vasc,1,0.01,1
+localization,foot,akiec,0,0.0,0
+localization,foot,bcc,0,0.0,0
+localization,foot,bkl,1,0.017857142857142856,1
+localization,foot,df,0,0.0,0
+localization,foot,mel,3,0.05357142857142857,1
+localization,foot,nv,52,0.9285714285714286,35
+localization,foot,vasc,0,0.0,0
+localization,genital,akiec,0,0.0,0
+localization,genital,bcc,0,0.0,0
+localization,genital,bkl,2,0.2857142857142857,1
+localization,genital,df,0,0.0,0
+localization,genital,mel,0,0.0,0
+localization,genital,nv,5,0.7142857142857143,5
+localization,genital,vasc,0,0.0,0
+localization,hand,akiec,1,0.1,1
+localization,hand,bcc,0,0.0,0
+localization,hand,bkl,2,0.2,2
+localization,hand,df,0,0.0,0
+localization,hand,mel,0,0.0,0
+localization,hand,nv,6,0.6,4
+localization,hand,vasc,1,0.1,1
+localization,lower extremity,akiec,12,0.03592814371257485,8
+localization,lower extremity,bcc,3,0.008982035928143712,3
+localization,lower extremity,bkl,33,0.09880239520958084,22
+localization,lower extremity,df,15,0.04491017964071856,9
+localization,lower extremity,mel,42,0.12574850299401197,23
+localization,lower extremity,nv,228,0.6826347305389222,192
+localization,lower extremity,vasc,1,0.0029940119760479044,1
+localization,neck,akiec,3,0.16666666666666666,3
+localization,neck,bcc,2,0.1111111111111111,1
+localization,neck,bkl,5,0.2777777777777778,3
+localization,neck,df,0,0.0,0
+localization,neck,mel,6,0.3333333333333333,4
+localization,neck,nv,1,0.05555555555555555,1
+localization,neck,vasc,1,0.05555555555555555,1
+localization,scalp,akiec,0,0.0,0
+localization,scalp,bcc,0,0.0,0
+localization,scalp,bkl,11,0.4583333333333333,8
+localization,scalp,df,0,0.0,0
+localization,scalp,mel,1,0.041666666666666664,1
+localization,scalp,nv,12,0.5,8
+localization,scalp,vasc,0,0.0,0
+localization,trunk,akiec,0,0.0,0
+localization,trunk,bcc,0,0.0,0
+localization,trunk,bkl,14,0.06278026905829596,10
+localization,trunk,df,0,0.0,0
+localization,trunk,mel,8,0.03587443946188341,5
+localization,trunk,nv,195,0.874439461883408,181
+localization,trunk,vasc,6,0.026905829596412557,6
+localization,upper extremity,akiec,6,0.044444444444444446,4
+localization,upper extremity,bcc,14,0.1037037037037037,7
+localization,upper extremity,bkl,14,0.1037037037037037,9
+localization,upper extremity,df,3,0.022222222222222223,2
+localization,upper extremity,mel,19,0.14074074074074075,10
+localization,upper extremity,nv,79,0.5851851851851851,66
+localization,upper extremity,vasc,0,0.0,0
+localization,unknown,akiec,0,0.0,0
+localization,unknown,bcc,2,0.05405405405405406,1
+localization,unknown,bkl,5,0.13513513513513514,4
+localization,unknown,df,0,0.0,0
+localization,unknown,mel,1,0.02702702702702703,1
+localization,unknown,nv,29,0.7837837837837838,24
+localization,unknown,vasc,0,0.0,0

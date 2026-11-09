@@ -1,0 +1,46 @@
+{
+  "calibration": {
+    "role": "used_to_fit_temperature",
+    "n": 990,
+    "before": {
+      "log_loss": 0.6821849531676731,
+      "brier_multiclass": 0.2818117158644056,
+      "ece_15_equal_width": 0.09060449714525441,
+      "accuracy": 0.8212121212121212,
+      "balanced_accuracy": 0.7514205672511353,
+      "f1_macro": 0.7202897378427471
+    },
+    "after": {
+      "log_loss": 0.5223778144413872,
+      "brier_multiclass": 0.25985355840865143,
+      "ece_15_equal_width": 0.031802019500393554,
+      "accuracy": 0.8212121212121212,
+      "balanced_accuracy": 0.7514205672511353,
+      "f1_macro": 0.7202897378427471
+    },
+    "predicted_classes_identical": true,
+    "classification_metric_max_abs_difference": 0.0
+  },
+  "selection": {
+    "role": "previously_used_for_model_selection_and_now_used_to_set_abstention",
+    "n": 1510,
+    "before": {
+      "log_loss": 0.662414794801579,
+      "brier_multiclass": 0.2862824163182691,
+      "ece_15_equal_width": 0.09748112248967693,
+      "accuracy": 0.8125827814569536,
+      "balanced_accuracy": 0.7272891485221581,
+      "f1_macro": 0.6824085658927957
+    },
+    "after": {
+      "log_loss": 0.5129045934944158,
+      "brier_multiclass": 0.26919142499240584,
+      "ece_15_equal_width": 0.029505680369013913,
+      "accuracy": 0.8125827814569536,
+      "balanced_accuracy": 0.7272891485221581,
+      "f1_macro": 0.6824085658927957
+    },
+    "predicted_classes_identical": true,
+    "classification_metric_max_abs_difference": 0.0
+  }
+}

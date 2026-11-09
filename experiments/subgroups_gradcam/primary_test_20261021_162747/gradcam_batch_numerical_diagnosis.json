@@ -1,0 +1,30 @@
+{
+  "incident": "El primer intento Grad-CAM se detuvo antes de guardar mapas porque la inferencia con lote 1 superó la tolerancia de coincidencia con las predicciones finales.",
+  "failed_preflight_directory": "experiments/subgroups_gradcam/primary_test_20261021_162618",
+  "image_id": "ISIC_0024923",
+  "final_evaluation_batch_size": 32,
+  "probability_tolerance_absolute": 0.00001,
+  "results": [
+    {
+      "batch_shape": 1,
+      "maximum_absolute_probability_difference": 0.00028583666055903567
+    },
+    {
+      "batch_shape": 2,
+      "maximum_absolute_probability_difference": 0.00009158743061375707
+    },
+    {
+      "batch_shape": 32,
+      "maximum_absolute_probability_difference": 0.000000032388861037624395
+    },
+    {
+      "batch_shape": 32,
+      "batch_content": "original manifest rows 96 through 127",
+      "maximum_absolute_probability_difference": 0.000000032388861037624395
+    }
+  ],
+  "cause": "Dependencia numérica de la aritmética convolucional CUDA respecto de la forma del lote.",
+  "resolution": "Se mantuvo la tolerancia. Para cada ejemplo seleccionado se reprodujo la forma de lote 32 repitiendo ese ejemplo, sin cargar imágenes no seleccionadas.",
+  "full_test_inference_repeated": false,
+  "model_temperature_threshold_or_partitions_changed": false
+}

@@ -1,0 +1,70 @@
+{
+  "system": {
+    "architecture": "efficientnet_b0",
+    "training_variant": "weighted_cross_entropy",
+    "training_seed": 43,
+    "checkpoint_epoch": 21,
+    "checkpoint": "experiments/efficientnet_b0/formal_seed43_20261012_155308/best_checkpoint.pt",
+    "checkpoint_sha256": "cc5484fac333a3de2cd40aff03ef8faf3b27dfdcc7c89ec835a3ea5ba19605ac",
+    "temperature": 2.0841459914047333,
+    "threshold": 0.5080122603583038,
+    "class_order": ["akiec", "bcc", "bkl", "df", "mel", "nv", "vasc"]
+  },
+  "inputs": {
+    "test_predictions": "experiments/final_evaluation/primary_seed43_epoch21_20261021_155351/test_predictions_complete.csv",
+    "test_predictions_sha256": "37db12cb61051725c4f8f8c7d2442bd2068dda767ffe58eaa9a1a918fb860a9e",
+    "final_evaluation_config": "configs/final_evaluation_primary.json",
+    "final_evaluation_config_sha256": "1c53181cde82c9bd400fc854cf4396cb6cd29f6b3174e8d1ecfe16772a5cccf2",
+    "test_manifest": "data/manifests/ham10000_v1_seed2026/test.csv",
+    "test_manifest_sha256": "0c51fd2ca5c6ec39bf145eedd7dfcaef841b877ef9a5b0cae677a91de8fc7dd7",
+    "original_metadata": "data/raw/ham10000_v1/archives/HAM10000_metadata.csv",
+    "original_metadata_sha256": "06aee5e603d313ba69de38263053c792a1dff030eb9c44a96ceb477ceefb99a5"
+  },
+  "subgroups": {
+    "age": ["<40", "40-59", ">=60", "unknown"],
+    "age_rule": "<40; 40 through 59 inclusive; >=60; missing as unknown",
+    "sex": "available categories; missing and explicit unknown retained as unknown",
+    "localization": "available categories; missing and explicit unknown retained as unknown",
+    "scarce_evidence_lesions_below": 20,
+    "macro_metrics_rule": "f1_macro and balanced_accuracy only if all seven true classes are represented"
+  },
+  "example_selection": {
+    "maximum_per_true_class_and_category": 2,
+    "categories": ["rejected", "correct_accepted", "error_accepted"],
+    "overlap_resolution": "rejected is exclusive and has priority; correct and error contain accepted cases only",
+    "ordering": "ascending image_id",
+    "lesion_priority": "within each true-class panel prefer lesion_id values not already selected; then fill deterministically if needed",
+    "duplicate_images_allowed": false,
+    "map_appeal_used_for_selection": false
+  },
+  "gradcam": {
+    "target_layer": "features.8.0",
+    "target_layer_role": "last Conv2d in final convolutional block",
+    "predicted_target": "pre_softmax_logit_of_predicted_class",
+    "true_target_for_errors": "pre_softmax_logit_of_true_class",
+    "activation_combination": "global_average_of_gradients_then_weighted_sum_and_ReLU",
+    "normalization": "per-map min-max after ReLU; null if non-finite or range <= 1e-12",
+    "overlay_opacity": 0.4,
+    "probability_tolerance_absolute": 0.00001,
+    "forward_batch_shape": 32,
+    "batch_shape_method": "repeat each selected image 32 times to reproduce final-evaluation CUDA arithmetic without loading non-selected test images",
+    "preprocessing": "deterministic RGB resize 224x224 bilinear antialias and ImageNet normalization"
+  },
+  "dataset_attribution": {
+    "title": "The HAM10000 dataset, a large collection of multi-source dermatoscopic images of common pigmented skin lesions",
+    "authors": "Tschandl, Rosendahl and Kittler",
+    "doi": "10.7910/DVN/DBW86T",
+    "version": "1.0",
+    "license": "Creative Commons Attribution-NonCommercial 4.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc/4.0/"
+  },
+  "scope": {
+    "statistics_reuse_saved_test_predictions": true,
+    "full_test_inference_repeated": false,
+    "model_modified": false,
+    "temperature_modified": false,
+    "threshold_modified": false,
+    "partitions_modified": false,
+    "demonstrator_implemented": false
+  }
+}

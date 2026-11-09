@@ -1,0 +1,22 @@
+{
+  "method": "scipy.optimize.minimize_scalar(method='bounded') on log(T)",
+  "objective": "unweighted multiclass log loss on calibration only",
+  "bounds_temperature": [
+    0.05,
+    20.0
+  ],
+  "bounds_log_temperature": [
+    -2.995732273553991,
+    2.995732273553991
+  ],
+  "success": true,
+  "message": "Solution found.",
+  "iterations": 9,
+  "function_evaluations": 11,
+  "temperature": 2.0841459914047333,
+  "log_temperature": 0.7343591748946574,
+  "objective_value": 0.5223778144413872,
+  "optimum_location": "interior",
+  "boundary_reached": false,
+  "network_weights_updated": false
+}

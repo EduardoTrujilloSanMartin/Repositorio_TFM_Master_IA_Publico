@@ -1,0 +1,13 @@
+{
+  "status": "completed",
+  "completed_at_utc": "2026-10-19T15:15:53.417725+00:00",
+  "output_directory": "experiments/calibration_abstention/primary_seed43_epoch21_20261019_171549",
+  "checkpoint_sha256": "cc5484fac333a3de2cd40aff03ef8faf3b27dfdcc7c89ec835a3ea5ba19605ac",
+  "temperature": 2.0841459914047333,
+  "threshold": 0.5080122603583038,
+  "coverage": 0.9,
+  "calibration_used_for_temperature": true,
+  "selection_used_for_abstention": true,
+  "selection_not_independent_final_evaluation": true,
+  "test_used": false
+}

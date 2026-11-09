@@ -1,0 +1,19 @@
+{
+  "recorded_at_utc": "2026-10-21T14:28:16.475554+00:00",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+  "torch": "2.13.0+cu130",
+  "torchvision": "0.28.0+cu130",
+  "numpy": "2.5.2",
+  "pandas": "3.0.6",
+  "pillow": "12.3.0",
+  "scikit_learn": "1.9.1",
+  "cuda_runtime": "13.0",
+  "cudnn": 92000,
+  "cuda_available": true,
+  "device_name": "NVIDIA GeForce RTX 3060",
+  "device_total_memory_bytes": 12478906368,
+  "nvidia_smi": "NVIDIA GeForce RTX 3060, 580.178.04, 12288 MiB",
+  "device": "cuda:0",
+  "gpu_name": "NVIDIA GeForce RTX 3060"
+}

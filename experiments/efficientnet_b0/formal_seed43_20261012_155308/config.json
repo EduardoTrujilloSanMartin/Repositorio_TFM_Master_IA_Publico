@@ -1,0 +1,156 @@
+{
+  "selected_architecture": "efficientnet_b0",
+  "selected_seed": 43,
+  "architectures": {
+    "cnn_simple": {
+      "initialization": "random",
+      "maximum_epochs": 30,
+      "training_phases": [
+        {
+          "name": "full",
+          "epochs": [
+            1,
+            30
+          ],
+          "extractor_learning_rate": 0.001,
+          "classifier_learning_rate": 0.001
+        }
+      ]
+    },
+    "mobilenet_v3_small": {
+      "initialization": "IMAGENET1K_V1",
+      "maximum_epochs": 30,
+      "training_phases": [
+        {
+          "name": "frozen",
+          "epochs": [
+            1,
+            5
+          ],
+          "extractor_learning_rate": 0.0,
+          "classifier_learning_rate": 0.001
+        },
+        {
+          "name": "fine_tune",
+          "epochs": [
+            6,
+            30
+          ],
+          "extractor_learning_rate": 0.0001,
+          "classifier_learning_rate": 0.001
+        }
+      ]
+    },
+    "efficientnet_b0": {
+      "initialization": "IMAGENET1K_V1",
+      "maximum_epochs": 30,
+      "training_phases": [
+        {
+          "name": "frozen",
+          "epochs": [
+            1,
+            5
+          ],
+          "extractor_learning_rate": 0.0,
+          "classifier_learning_rate": 0.001
+        },
+        {
+          "name": "fine_tune",
+          "epochs": [
+            6,
+            30
+          ],
+          "extractor_learning_rate": 0.0001,
+          "classifier_learning_rate": 0.001
+        }
+      ]
+    }
+  },
+  "data": {
+    "train_manifest": "data/manifests/ham10000_v1_seed2026/train.csv",
+    "selection_manifest": "data/manifests/ham10000_v1_seed2026/selection.csv",
+    "partition_seed": 2026,
+    "class_order": [
+      "akiec",
+      "bcc",
+      "bkl",
+      "df",
+      "mel",
+      "nv",
+      "vasc"
+    ],
+    "input_size": [
+      224,
+      224
+    ],
+    "resize_interpolation": "bilinear",
+    "resize_antialias": true,
+    "train_augmentation": {
+      "horizontal_flip_probability": 0.5,
+      "vertical_flip_probability": 0.5,
+      "right_angle_rotations": [
+        0,
+        90,
+        180,
+        270
+      ],
+      "equal_probability": true
+    },
+    "normalization_mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "normalization_std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "training": {
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "batch_size": 32,
+    "loss": "weighted_cross_entropy",
+    "class_weight_formula": "N_train / (7 * class_frequency_train)",
+    "optimizer": "AdamW",
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "epsilon": 1e-08,
+    "weight_decay": 0.0001,
+    "optimizer_reinitialized_at_fine_tuning": true,
+    "early_stopping": {
+      "active_from_epoch": 6,
+      "patience": 7,
+      "metric": "selection_f1_macro"
+    },
+    "best_checkpoint_tiebreak": [
+      "higher_selection_f1_macro",
+      "lower_selection_unweighted_loss",
+      "earlier_epoch"
+    ],
+    "automatic_mixed_precision": false,
+    "num_workers": 4,
+    "deterministic_algorithms": true
+  },
+  "architecture_selection": {
+    "criterion": "highest_mean_selection_f1_macro_over_three_seeds",
+    "tie_at_decimals": 3,
+    "tie_break": "fewer_parameters",
+    "representative_checkpoint": "selection_f1_macro_closest_to_architecture_median",
+    "representative_tie_break": "lower_seed"
+  },
+  "scope": {
+    "allowed_partitions": [
+      "train",
+      "selection"
+    ],
+    "calibration_used": false,
+    "test_used": false
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "completed_at_utc": "2026-10-21T13:53:54.885147+00:00",
+  "extraction_count": 1,
+  "images": 1499,
+  "batches": 47,
+  "seconds": 2.6259306100000686,
+  "device": "cuda:0",
+  "gpu_name": "NVIDIA GeForce RTX 3060",
+  "peak_allocated_mib": 386.4345703125,
+  "peak_reserved_mib": 650.0,
+  "logits_file": "test_logits_single_extraction.csv",
+  "logits_file_sha256": "a0b608440a526188693345ce4d2396aa948d4839c8a9b58d8943f4564d62c35d"
+}

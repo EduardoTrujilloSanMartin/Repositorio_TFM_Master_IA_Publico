@@ -1,0 +1,61 @@
+{
+  "status": "completed",
+  "completed_at_utc": "2026-10-21T13:54:18.094807+00:00",
+  "output_directory": "experiments/final_evaluation/primary_seed43_epoch21_20261021_155351",
+  "checkpoint_sha256": "cc5484fac333a3de2cd40aff03ef8faf3b27dfdcc7c89ec835a3ea5ba19605ac",
+  "test_manifest_sha256": "0c51fd2ca5c6ec39bf145eedd7dfcaef841b877ef9a5b0cae677a91de8fc7dd7",
+  "temperature": 2.0841459914047333,
+  "threshold": 0.5080122603583038,
+  "logit_extraction_count": 1,
+  "test_images": 1499,
+  "test_lesions": 1121,
+  "performance": {
+    "n": 1499,
+    "f1_macro": 0.67095574392914,
+    "balanced_accuracy": 0.7105649301888367,
+    "accuracy": 0.7958639092728486,
+    "auroc_macro_ovr": 0.9568228995897057
+  },
+  "calibration": {
+    "before": {
+      "log_loss": 0.7289843353345837,
+      "brier_multiclass": 0.31988557252283795,
+      "ece_15_equal_width": 0.11323644179780629
+    },
+    "after": {
+      "log_loss": 0.5421152603540645,
+      "brier_multiclass": 0.28617152077299274,
+      "ece_15_equal_width": 0.025090144780295476
+    },
+    "temperature": 2.0841459914047333,
+    "predicted_classes_identical": true,
+    "classification_metric_max_abs_difference": 0.0
+  },
+  "abstention": {
+    "threshold_frozen": 0.5080122603583038,
+    "acceptance_rule": "confidence_calibrated >= threshold",
+    "threshold_adapted_on_test": false,
+    "n": 1499,
+    "coverage": 0.895930620413609,
+    "accepted": 1343,
+    "rejected": 156,
+    "accepted_errors": 220,
+    "accepted_error_rate_selective_risk": 0.16381236038719285,
+    "rejected_errors": 86,
+    "rejected_error_rate": 0.5512820512820513
+  },
+  "melanoma": {
+    "support": 163,
+    "sensitivity": 0.6257668711656442,
+    "true_positives": 102,
+    "false_negatives": 61,
+    "false_positives": 109,
+    "correct_and_accepted": 87,
+    "accepted_with_error": 49,
+    "rejected_total": 27,
+    "rejected_correct_classification": 15,
+    "rejected_incorrect_classification": 12,
+    "abstention_counted_as_correct": false
+  },
+  "decisions_changed_after_test": false
+}

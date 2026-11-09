@@ -1,0 +1,14 @@
+HAM10000: Philipp Tschandl, Cliff Rosendahl y Harald Kittler.
+The HAM10000 dataset, a large collection of multi-source dermatoscopic images
+of common pigmented skin lesions. Scientific Data 5, 180161 (2018).
+https://doi.org/10.1038/sdata.2018.161
+Datos: Harvard Dataverse, V1, https://doi.org/10.7910/DVN/DBW86T.
+Licencia: Creative Commons Attribution-NonCommercial 4.0 International.
+https://creativecommons.org/licenses/by-nc/4.0/
+Los metadatos e identificadores incluidos proceden de ese conjunto. Las imágenes
+originales se descargan de su fuente oficial y no se incluyen en este paquete.
+Los pesos principales derivan de datos sujetos a esas condiciones de uso.
+
+Las arquitecturas, bibliotecas y métodos de terceros conservan sus atribuciones
+y licencias. Las dependencias se registran en requirements*.txt. Este paquete
+no asigna una licencia nueva al código ni altera las condiciones de terceros.

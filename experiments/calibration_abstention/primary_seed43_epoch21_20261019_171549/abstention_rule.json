@@ -1,0 +1,23 @@
+{
+  "threshold_full_precision": 0.5080122603583038,
+  "threshold_hex": "0x1.041a2ed869729p-1",
+  "selection_size": 1510,
+  "target_minimum_coverage": 0.9,
+  "coverage_obtained": 0.9,
+  "accepted": 1359,
+  "rejected": 151,
+  "ties_at_threshold": 1,
+  "next_larger_unique_confidence": 0.5087535645749504,
+  "coverage_at_next_larger_unique_confidence": 0.8993377483443709,
+  "accepted_error_count": 200,
+  "accepted_error_rate": 0.14716703458425312,
+  "rejected_error_count": 83,
+  "rejected_error_rate": 0.5496688741721855,
+  "melanoma": {
+    "support": 159,
+    "correct_and_accepted": 91,
+    "accepted_with_error": 39,
+    "rejected": 29
+  },
+  "rule_frozen": true
+}

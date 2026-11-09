@@ -1,0 +1,16 @@
+{
+  "aggregation": "mean_calibrated_probabilities_of_images_per_lesion_before_argmax",
+  "performance": {
+    "n": 1121,
+    "f1_macro": 0.7100312247544374,
+    "balanced_accuracy": 0.757294654723915,
+    "accuracy": 0.8465655664585192,
+    "auroc_macro_ovr": 0.9707804747037996
+  },
+  "auroc": {
+    "macro_ovr": 0.9707804747037996,
+    "macro_estimable": true,
+    "macro_rule": "media de las siete AUROC; no estimable si alguna clase carece de positivos o negativos",
+    "estimable_classes": 7
+  }
+}

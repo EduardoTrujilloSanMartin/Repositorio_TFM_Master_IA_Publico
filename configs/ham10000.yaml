@@ -1,0 +1,26 @@
+dataset:
+  name: HAM10000
+  persistent_id: doi:10.7910/DVN/DBW86T
+  version: "1.0"
+  source: Harvard Dataverse
+  license: Creative Commons Attribution-NonCommercial 4.0 International
+
+splits:
+  seed: 2026
+  target_proportions:
+    train: 0.60
+    selection: 0.15
+    calibration: 0.10
+    test: 0.15
+  stratify_by: dx
+  group_by: consolidated_group_id
+
+classes:
+  - akiec
+  - bcc
+  - bkl
+  - df
+  - mel
+  - nv
+  - vasc
+

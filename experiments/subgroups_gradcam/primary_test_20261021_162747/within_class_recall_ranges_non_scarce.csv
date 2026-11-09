@@ -1,0 +1,22 @@
+variable,class,non_scarce_estimable_groups,minimum_recall,maximum_recall,recall_range,interpretation
+age_group,akiec,2,0.4,0.5333333333333333,0.1333333333333333,descriptivo; no causal y condicionado por composición y tamaño muestral
+age_group,bcc,3,0.6666666666666666,1.0,0.33333333333333337,descriptivo; no causal y condicionado por composición y tamaño muestral
+age_group,bkl,3,0.5769230769230769,0.8888888888888888,0.31196581196581197,descriptivo; no causal y condicionado por composición y tamaño muestral
+age_group,df,3,0.25,0.8571428571428571,0.6071428571428571,descriptivo; no causal y condicionado por composición y tamaño muestral
+age_group,mel,3,0.3333333333333333,0.6914893617021277,0.3581560283687944,descriptivo; no causal y condicionado por composición y tamaño muestral
+age_group,nv,3,0.7920353982300885,0.89272030651341,0.10068490828332144,descriptivo; no causal y condicionado por composición y tamaño muestral
+age_group,vasc,3,1.0,1.0,0.0,descriptivo; no causal y condicionado por composición y tamaño muestral
+sex,akiec,2,0.4375,0.4482758620689655,0.010775862068965525,descriptivo; no causal y condicionado por composición y tamaño muestral
+sex,bcc,2,0.75,0.96,0.20999999999999996,descriptivo; no causal y condicionado por composición y tamaño muestral
+sex,bkl,2,0.5903614457831325,0.7671232876712328,0.1767618418881003,descriptivo; no causal y condicionado por composición y tamaño muestral
+sex,df,2,0.3333333333333333,0.6666666666666666,0.3333333333333333,descriptivo; no causal y condicionado por composición y tamaño muestral
+sex,mel,2,0.5555555555555556,0.6813186813186813,0.12576312576312576,descriptivo; no causal y condicionado por composición y tamaño muestral
+sex,nv,2,0.8382352941176471,0.8774193548387097,0.03918406072106262,descriptivo; no causal y condicionado por composición y tamaño muestral
+sex,vasc,2,1.0,1.0,0.0,descriptivo; no causal y condicionado por composición y tamaño muestral
+localization,akiec,5,0.0,0.5714285714285714,0.5714285714285714,descriptivo; no causal y condicionado por composición y tamaño muestral
+localization,bcc,7,0.2,1.0,0.8,descriptivo; no causal y condicionado por composición y tamaño muestral
+localization,bkl,9,0.0,1.0,1.0,descriptivo; no causal y condicionado por composición y tamaño muestral
+localization,df,2,0.5333333333333333,0.6666666666666666,0.1333333333333333,descriptivo; no causal y condicionado por composición y tamaño muestral
+localization,mel,9,0.3333333333333333,1.0,0.6666666666666667,descriptivo; no causal y condicionado por composición y tamaño muestral
+localization,nv,9,0.631578947368421,0.958974358974359,0.327395411605938,descriptivo; no causal y condicionado por composición y tamaño muestral
+localization,vasc,6,1.0,1.0,0.0,descriptivo; no causal y condicionado por composición y tamaño muestral

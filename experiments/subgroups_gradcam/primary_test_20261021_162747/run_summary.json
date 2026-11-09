@@ -1,0 +1,14 @@
+{
+  "status": "completed",
+  "completed_at_utc": "2026-10-21T14:28:16.461215+00:00",
+  "output_directory": "experiments/subgroups_gradcam/primary_test_20261021_162747",
+  "selected_images": 39,
+  "gradcam_maps": 61,
+  "null_maps": 0,
+  "subgroup_count": 22,
+  "scarce_groups": 8,
+  "full_test_inference_repeated": false,
+  "checkpoint_sha256": "cc5484fac333a3de2cd40aff03ef8faf3b27dfdcc7c89ec835a3ea5ba19605ac",
+  "test_predictions_sha256": "37db12cb61051725c4f8f8c7d2442bd2068dda767ffe58eaa9a1a918fb860a9e",
+  "model_temperature_threshold_partitions_unchanged": true
+}

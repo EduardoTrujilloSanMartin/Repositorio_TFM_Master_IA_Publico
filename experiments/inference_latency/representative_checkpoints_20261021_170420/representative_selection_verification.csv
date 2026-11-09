@@ -1,0 +1,4 @@
+architecture,median_selection_f1_macro,representative_seed,representative_epoch,representative_selection_f1_macro,selection_only,test_performance_consulted
+cnn_simple,0.3954119165611748,17,19,0.3954119165611748,True,False
+mobilenet_v3_small,0.6557961855162536,29,20,0.6557961855162536,True,False
+efficientnet_b0,0.6824085658927957,43,21,0.6824085658927957,True,False

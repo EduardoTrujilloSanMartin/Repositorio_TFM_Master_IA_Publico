@@ -1,0 +1,99 @@
+TFM: REPRODUCCIÓN DEL SISTEMA Y DE SUS RESULTADOS
+
+1. ALCANCE
+El paquete contiene código técnico, configuraciones congeladas, los cuatro
+manifiestos de partición, resultados guardados, temperatura, umbral y auxiliares
+de ejecución. No contiene Markdown ni anotaciones de estudio.
+Incluye el checkpoint original del modelo principal, verificado por SHA-256.
+No se redistribuyen las 10.015 imágenes; se obtienen de la fuente oficial.
+
+2. ENTORNO DE REFERENCIA
+Linux, Python 3.12, PyTorch/TorchVision y GPU NVIDIA CUDA. El demostrador original
+está configurado para CUDA; no se promete ejecución directa en CPU/Windows.
+Las tablas se pueden verificar en CPU sin imágenes ni checkpoint.
+
+Desde la carpeta que contiene scripts/, configs/ y demo/:
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements-lock.txt
+
+No se deben modificar el Python del sistema ni los controladores automáticamente.
+La compatibilidad CUDA depende del equipo. requirements.txt enumera dependencias
+directas y requirements-lock.txt conserva las versiones del entorno de referencia.
+
+3. VERIFICAR ARCHIVOS Y RESULTADOS YA GUARDADOS
+python verificar_entrega.py
+python recalcular_resultados.py
+
+La primera orden comprueba huellas y detecta checkpoint ausente/incompatible.
+La segunda recalcula rendimiento, calibración y abstención desde los logits
+guardados. No realiza nueva inferencia ni usa el test para ajustar decisiones.
+Debe recuperar F1 macro 0,6709557439, exactitud 0,7958639093,
+sensibilidad de melanoma 0,6257668712, 1.343 aceptadas y 156 rechazadas.
+Los intervalos oficiales guardados proceden de 1.000 remuestreos por lesión;
+recalcular_resultados.py no vuelve a ejecutar ese bootstrap.
+
+4. OBTENER Y PREPARAR LAS IMÁGENES
+Fuente: Harvard Dataverse, HAM10000, versión archivada 1.0.
+https://doi.org/10.7910/DVN/DBW86T
+Licencia: CC BY-NC 4.0. Consulte ATRIBUCIONES.txt.
+Se requiere conexión y espacio de disco suficiente; el descargador exige al
+menos 12 GiB libres. Descarga aproximadamente 2,8 GB de ZIP de imágenes.
+
+python scripts/download_ham10000.py
+python preparar_imagenes.py
+python verificar_entrega.py --imagenes
+
+El descargador verifica los originales. preparar_imagenes.py extrae los JPEG
+siguiendo las rutas existentes y comprueba sus huellas. NO regenere las
+particiones para comparar con los resultados publicados.
+
+5. EJECUTAR EL DEMOSTRADOR CON EL MODELO ORIGINAL
+Compruebe primero que el checkpoint está incluido y que CUDA funciona.
+python -m streamlit run demo/app.py
+
+Abra la dirección local mostrada. Cargue una imagen dermatoscópica JPEG/PNG.
+La aplicación utiliza EfficientNetB0 ponderada, semilla 43, época 21,
+T=2.0841459914047333 y umbral=0.5080122603583038.
+No entrena ni recalibra al cargar imágenes. No tiene validación clínica.
+
+6. VOLVER A VERIFICAR/EVALUAR EL SISTEMA CONGELADO
+Estas órdenes realizan cálculos nuevos y escriben nuevos directorios de ejecución;
+no son necesarias para leer los resultados ya entregados.
+
+python scripts/verify_demonstrator.py
+python scripts/evaluate_final_test.py --technical-check
+python scripts/evaluate_final_test.py --evaluate
+
+La evaluación original se realizó una vez; una ejecución del revisor es una
+reproducción, no una nueva selección del modelo. Se conserva el umbral exacto.
+verify_demonstrator.py requiere las imágenes de los 39 ejemplos, obtenidas al
+preparar HAM10000. Las salidas deben mantenerse separadas de las ya publicadas.
+
+7. SUBGRUPOS Y GRAD-CAM
+Las tablas existentes pueden consultarse sin generar nuevos mapas.
+Para una reproducción de mapas, use una preparación nueva y su directorio:
+python scripts/analyze_subgroups_and_gradcam.py --prepare
+python scripts/analyze_subgroups_and_gradcam.py --gradcam --run-dir experiments/subgroups_gradcam/DIRECTORIO_NUEVO
+
+Sustituya DIRECTORIO_NUEVO por la ruta impresa por --prepare. No mezcle una
+preparación histórica con un script cuyo hash sea diferente, ni modifique
+registros anteriores para forzar su aceptación.
+
+8. NUEVO ENTRENAMIENTO Y COMPARACIÓN DE COSTES
+El código de entrenamiento se incluye, pero ejecutar de nuevo las fases crea
+nuevos checkpoints y carpetas. No garantiza identidad de pesos ni de huellas.
+Las configuraciones entregadas identifican la ejecución histórica; una nueva
+campaña debe registrar sus propias rutas/hashes sin sustituir los publicados.
+El checkpoint principal permite verificar EfficientNetB0 y el demostrador.
+benchmark_inference.py compara tres arquitecturas y necesita además checkpoints
+representativos de CNN sencilla y MobileNetV3-Small, no incluidos en este paquete.
+Las tablas de latencia guardadas se incluyen para revisar los resultados.
+
+9. TRAZABILIDAD
+Los archivos originales se copian sin cambiar su contenido. Los auxiliares de
+esta entrega son verificar_entrega.py, recalcular_resultados.py,
+preparar_imagenes.py y completar_paquete.py. No modifican la metodología.
+ARCHIVOS_ENTREGA.json conserva las huellas del contenido entregado.
+Las diferencias numéricas entre equipos no autorizan a modificar silenciosamente
+el modelo, la temperatura, el umbral, las particiones o la tolerancia.

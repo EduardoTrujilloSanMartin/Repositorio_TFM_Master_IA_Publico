@@ -1,0 +1,15 @@
+{
+  "rule": "mayor media de F1 macro en selección; empate a 3 decimales: menos parámetros",
+  "representative_rule": "F1 macro más próximo a la mediana de la arquitectura; empate: semilla menor",
+  "selected_architecture": "efficientnet_b0",
+  "selected_architecture_label": "EfficientNetB0",
+  "selected_mean_f1_macro": 0.6873252763828787,
+  "selected_std_f1_macro_sample": 0.021533646889547408,
+  "median_f1_macro": 0.6824085658927957,
+  "representative_seed": 43,
+  "representative_f1_macro": 0.6824085658927957,
+  "representative_run_directory": "experiments/efficientnet_b0/formal_seed43_20261012_155308",
+  "representative_checkpoint": "experiments/efficientnet_b0/formal_seed43_20261012_155308/best_checkpoint.pt",
+  "calibration_used": false,
+  "test_used": false
+}

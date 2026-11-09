@@ -1,0 +1,40 @@
+{
+  "completed_at_utc": "2026-10-21T15:04:07.335410+00:00",
+  "status": "passed",
+  "cuda_device": "NVIDIA GeForce RTX 3060",
+  "selected_examples": 39,
+  "forward_batch_shape": 32,
+  "batch_shape_method": "repeat the single uploaded or selected image 32 times and use row zero",
+  "maximum_absolute_probability_difference": 1.1352498485717177e-07,
+  "probability_tolerance_absolute": 1e-05,
+  "all_classes_match": true,
+  "all_abstention_decisions_match": true,
+  "all_probability_sums_valid": true,
+  "gradcam_maps_checked": 39,
+  "gradcam_null_maps": 0,
+  "gradcam_non_finite_maps": 0,
+  "invalid_files_rejected": 4,
+  "threshold_boundary": {
+    "threshold": 0.5080122603583038,
+    "equal_is_accepted": true,
+    "next_float_below_is_rejected": true,
+    "next_float_above_is_accepted": true
+  },
+  "class_order": [
+    "akiec",
+    "bcc",
+    "bkl",
+    "df",
+    "mel",
+    "nv",
+    "vasc"
+  ],
+  "checkpoint_sha256_before": "cc5484fac333a3de2cd40aff03ef8faf3b27dfdcc7c89ec835a3ea5ba19605ac",
+  "checkpoint_sha256_after": "cc5484fac333a3de2cd40aff03ef8faf3b27dfdcc7c89ec835a3ea5ba19605ac",
+  "config_sha256": "287633973b91067fa24a713299613f240925f0c44399c17f12f4e237f0396cd0",
+  "shared_route_script_sha256": "5bd97d7bab675ece4820510b5098ceefb1e791aae43e49f71e2f91b90887bb40",
+  "test_script_sha256": "621e7406764de0b7db07c8531446b902e0268ea303b9a2ed9babc4628e6c55d7",
+  "full_test_inference_repeated": false,
+  "only_selected_test_images_loaded": true,
+  "training_or_recalibration_performed": false
+}

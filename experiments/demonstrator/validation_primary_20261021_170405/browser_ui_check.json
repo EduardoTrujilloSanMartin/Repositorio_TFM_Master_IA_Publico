@@ -1,0 +1,17 @@
+{
+  "checked_at_local": "2026-10-21T17:09:39+02:00",
+  "url": "http://127.0.0.1:8501/",
+  "status": "passed",
+  "visible_warning": "Prototipo académico sin validación clínica. No proporciona diagnósticos, no sustituye la valoración profesional y no garantiza detectar imágenes fuera del dominio.",
+  "frozen_system_caption_visible": true,
+  "accepted_formats_visible": ["JPG", "PNG"],
+  "uploaded_example": "ISIC_0024309.jpg",
+  "uploaded_example_is_one_of_39_selected": true,
+  "predicted_class_visible": "nv",
+  "calibrated_confidence_visible": 0.991813,
+  "acceptance_visible": "ACEPTADA",
+  "seven_probability_table_visible": true,
+  "gradcam_visible": true,
+  "gradcam_limitation_visible": true,
+  "browser_upload_note": "La interfaz se comprobó con un ejemplo ya seleccionado; no se añadió ninguna imagen al paquete de revisión."
+}

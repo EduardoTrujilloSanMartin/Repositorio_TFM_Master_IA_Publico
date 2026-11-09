@@ -1,0 +1,16 @@
+{
+  "completed_at_utc": "2026-10-21T15:04:32.397774+00:00",
+  "status": "passed",
+  "gpu": "NVIDIA GeForce RTX 3060",
+  "warmup_iterations_per_component": 20,
+  "measured_iterations_per_component": 100,
+  "cuda_synchronized": true,
+  "sample_image_id": "ISIC_0024309",
+  "sample_sha256": "c4421c417d4ba9debcb42ff0b9de5c198b3fecdccb848a702d727d2e79309a80",
+  "representative_rule_verified_from_selection": true,
+  "test_performance_consulted_for_checkpoint_choice": false,
+  "full_test_inference_repeated": false,
+  "raw_measurement_rows": 900,
+  "config_sha256": "287633973b91067fa24a713299613f240925f0c44399c17f12f4e237f0396cd0",
+  "benchmark_script_sha256": "608ca9d3c0432819fb5959fce79e84fbcf9dae8c142a9a520186060037a4a68e"
+}

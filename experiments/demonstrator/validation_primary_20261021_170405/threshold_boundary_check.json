@@ -1,0 +1,6 @@
+{
+  "threshold": 0.5080122603583038,
+  "equal_is_accepted": true,
+  "next_float_below_is_rejected": true,
+  "next_float_above_is_accepted": true
+}

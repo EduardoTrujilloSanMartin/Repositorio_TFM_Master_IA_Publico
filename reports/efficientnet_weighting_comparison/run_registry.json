@@ -1,0 +1,38 @@
+[
+  {
+    "variant": "weighted",
+    "seed": 17,
+    "run_directory": "experiments/efficientnet_b0/formal_seed17_20261012_153236",
+    "weighted": true
+  },
+  {
+    "variant": "weighted",
+    "seed": 29,
+    "run_directory": "experiments/efficientnet_b0/formal_seed29_20261012_154423",
+    "weighted": true
+  },
+  {
+    "variant": "weighted",
+    "seed": 43,
+    "run_directory": "experiments/efficientnet_b0/formal_seed43_20261012_155308",
+    "weighted": true
+  },
+  {
+    "variant": "unweighted",
+    "seed": 17,
+    "run_directory": "experiments/efficientnet_b0_unweighted/formal_seed17_20261019_154944",
+    "weighted": false
+  },
+  {
+    "variant": "unweighted",
+    "seed": 29,
+    "run_directory": "experiments/efficientnet_b0_unweighted/formal_seed29_20261019_160130",
+    "weighted": false
+  },
+  {
+    "variant": "unweighted",
+    "seed": 43,
+    "run_directory": "experiments/efficientnet_b0_unweighted/formal_seed43_20261019_160805",
+    "weighted": false
+  }
+]

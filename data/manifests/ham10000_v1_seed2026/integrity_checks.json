@@ -1,0 +1,54 @@
+{
+  "seed": 2026,
+  "targets": {
+    "train": 0.6,
+    "selection": 0.15,
+    "calibration": 0.1,
+    "test": 0.15
+  },
+  "group_intersections": {
+    "train__selection": [],
+    "train__calibration": [],
+    "train__test": [],
+    "selection__calibration": [],
+    "selection__test": [],
+    "calibration__test": []
+  },
+  "exact_hash_intersections": {
+    "train__selection": {
+      "file_sha256": [],
+      "pixel_sha256": []
+    },
+    "train__calibration": {
+      "file_sha256": [],
+      "pixel_sha256": []
+    },
+    "train__test": {
+      "file_sha256": [],
+      "pixel_sha256": []
+    },
+    "selection__calibration": {
+      "file_sha256": [],
+      "pixel_sha256": []
+    },
+    "selection__test": {
+      "file_sha256": [],
+      "pixel_sha256": []
+    },
+    "calibration__test": {
+      "file_sha256": [],
+      "pixel_sha256": []
+    }
+  },
+  "all_group_intersections_empty": true,
+  "all_hash_intersections_empty": true,
+  "each_image_once": true,
+  "all_classes_present": {
+    "train": true,
+    "selection": true,
+    "calibration": true,
+    "test": true
+  },
+  "test_used_for_model_or_threshold_selection": false,
+  "patient_independence_claimed": false
+}

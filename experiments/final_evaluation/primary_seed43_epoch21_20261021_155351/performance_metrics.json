@@ -1,0 +1,15 @@
+{
+  "image_level": {
+    "n": 1499,
+    "f1_macro": 0.67095574392914,
+    "balanced_accuracy": 0.7105649301888367,
+    "accuracy": 0.7958639092728486,
+    "auroc_macro_ovr": 0.9568228995897057
+  },
+  "auroc": {
+    "macro_ovr": 0.9568228995897057,
+    "macro_estimable": true,
+    "macro_rule": "media de las siete AUROC; no estimable si alguna clase carece de positivos o negativos",
+    "estimable_classes": 7
+  }
+}

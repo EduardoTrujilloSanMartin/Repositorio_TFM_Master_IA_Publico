@@ -1,0 +1,45 @@
+{
+  "system": {
+    "architecture": "efficientnet_b0",
+    "loss_during_training": "weighted_cross_entropy",
+    "training_seed": 43,
+    "checkpoint_epoch": 21,
+    "checkpoint": "experiments/efficientnet_b0/formal_seed43_20261012_155308/best_checkpoint.pt",
+    "checkpoint_sha256": "cc5484fac333a3de2cd40aff03ef8faf3b27dfdcc7c89ec835a3ea5ba19605ac",
+    "class_order": ["akiec", "bcc", "bkl", "df", "mel", "nv", "vasc"]
+  },
+  "data": {
+    "selection_manifest": "data/manifests/ham10000_v1_seed2026/selection.csv",
+    "selection_manifest_sha256": "5563d434fad5182f2ca46ae80ab6ecbb86161aa7532d9a7f11434f69a35c4149",
+    "calibration_manifest": "data/manifests/ham10000_v1_seed2026/calibration.csv",
+    "calibration_manifest_sha256": "ce622c4242b394a4324ce849180aef311aec52898a2be98d64a5a8e1898d1373",
+    "selection_predictions": "experiments/efficientnet_b0/formal_seed43_20261012_155308/selection_predictions.csv",
+    "partition_seed": 2026,
+    "preprocessing": "deterministic RGB resize 224x224 bilinear antialias and ImageNet normalization"
+  },
+  "temperature_scaling": {
+    "objective": "unweighted_multiclass_log_loss_on_calibration",
+    "parameterization": "log_temperature",
+    "temperature_bounds": [0.05, 20.0],
+    "method": "scipy.optimize.minimize_scalar_bounded",
+    "deterministic": true
+  },
+  "calibration_metrics": {
+    "ece_bins": 15,
+    "ece_bin_type": "equal_width",
+    "brier": "mean_per_image_sum_over_7_classes_squared_error"
+  },
+  "abstention": {
+    "confidence": "maximum_calibrated_probability",
+    "target_minimum_selection_coverage": 0.9,
+    "threshold_rule": "largest_value_among_zero_and_unique_selection_confidences_with_coverage_at_least_0.9",
+    "acceptance_rule": "confidence_greater_than_or_equal_to_threshold",
+    "include_ties": true
+  },
+  "scope": {
+    "allowed_partitions": ["selection", "calibration"],
+    "test_used": false,
+    "network_weights_updated": false,
+    "primary_selection_preserved": "efficientnet_b0_weighted_seed43_epoch21"
+  }
+}

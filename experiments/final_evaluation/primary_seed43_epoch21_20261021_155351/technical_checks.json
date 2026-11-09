@@ -1,0 +1,22 @@
+{
+  "technical_check_source": "experiments/final_evaluation/technical_check_20261021_155341/technical_checks.json",
+  "technical_check_passed_before_test_inference": true,
+  "procedural_incident": "Antes de completar la prueba técnica se mostraron cuatro filas del manifiesto al inspeccionar ruta y huella; no se cargaron imágenes ni se calcularon predicciones. La inferencia formal se realizó una sola vez después de superar la prueba técnica.",
+  "checkpoint_sha256_before": "cc5484fac333a3de2cd40aff03ef8faf3b27dfdcc7c89ec835a3ea5ba19605ac",
+  "checkpoint_sha256_after": "cc5484fac333a3de2cd40aff03ef8faf3b27dfdcc7c89ec835a3ea5ba19605ac",
+  "checkpoint_unchanged": true,
+  "model_state_digest_unchanged": true,
+  "model_eval_mode": true,
+  "all_parameters_require_grad_false": true,
+  "initialization_constructor": "EfficientNet_B0_Weights.IMAGENET1K_V1",
+  "test_manifest_sha256_verified": true,
+  "manifest_order_preserved": true,
+  "single_logit_extraction": true,
+  "logits_finite": true,
+  "probabilities_sum_to_one": true,
+  "temperature_classes_unchanged": true,
+  "temperature_and_threshold_loaded_from_frozen_files": true,
+  "training_performed": false,
+  "recalibration_performed": false,
+  "threshold_adapted": false
+}

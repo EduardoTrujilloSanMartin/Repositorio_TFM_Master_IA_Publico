@@ -1,0 +1,5 @@
+case,rejected,message
+empty,True,El archivo está vacío.
+text,True,El archivo no es una imagen JPEG/PNG íntegra y decodificable.
+unsupported_bmp,True,Formato BMP no admitido; use JPEG o PNG.
+truncated_jpeg,True,El archivo no es una imagen JPEG/PNG íntegra y decodificable.

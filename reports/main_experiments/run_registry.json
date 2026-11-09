@@ -1,0 +1,47 @@
+[
+  {
+    "architecture": "cnn_simple",
+    "seed": 17,
+    "run_directory": "experiments/cnn_simple/formal_seed17_20261012_145054"
+  },
+  {
+    "architecture": "cnn_simple",
+    "seed": 29,
+    "run_directory": "experiments/cnn_simple/formal_seed29_20261012_150757"
+  },
+  {
+    "architecture": "cnn_simple",
+    "seed": 43,
+    "run_directory": "experiments/cnn_simple/formal_seed43_20261012_151121"
+  },
+  {
+    "architecture": "mobilenet_v3_small",
+    "seed": 17,
+    "run_directory": "experiments/mobilenet_v3_small/formal_seed17_20261012_151803"
+  },
+  {
+    "architecture": "mobilenet_v3_small",
+    "seed": 29,
+    "run_directory": "experiments/mobilenet_v3_small/formal_seed29_20261012_152346"
+  },
+  {
+    "architecture": "mobilenet_v3_small",
+    "seed": 43,
+    "run_directory": "experiments/mobilenet_v3_small/formal_seed43_20261012_152849"
+  },
+  {
+    "architecture": "efficientnet_b0",
+    "seed": 17,
+    "run_directory": "experiments/efficientnet_b0/formal_seed17_20261012_153236"
+  },
+  {
+    "architecture": "efficientnet_b0",
+    "seed": 29,
+    "run_directory": "experiments/efficientnet_b0/formal_seed29_20261012_154423"
+  },
+  {
+    "architecture": "efficientnet_b0",
+    "seed": 43,
+    "run_directory": "experiments/efficientnet_b0/formal_seed43_20261012_155308"
+  }
+]

@@ -1,0 +1,40 @@
+{
+  "checkpoint_identity_verified": true,
+  "checkpoint_sha256_before": "cc5484fac333a3de2cd40aff03ef8faf3b27dfdcc7c89ec835a3ea5ba19605ac",
+  "checkpoint_sha256_after": "cc5484fac333a3de2cd40aff03ef8faf3b27dfdcc7c89ec835a3ea5ba19605ac",
+  "checkpoint_file_unchanged": true,
+  "checkpoint_metadata": {
+    "architecture": "efficientnet_b0",
+    "training_seed": 43,
+    "epoch": 21,
+    "partition_seed": 2026,
+    "class_order": [
+      "akiec",
+      "bcc",
+      "bkl",
+      "df",
+      "mel",
+      "nv",
+      "vasc"
+    ]
+  },
+  "initialization": "EfficientNet_B0_Weights.IMAGENET1K_V1",
+  "model_eval_mode": true,
+  "all_parameters_require_grad_false": true,
+  "model_state_digest_before_and_after_equal": true,
+  "selection_predictions_reused": true,
+  "selection_predictions_source": "experiments/efficientnet_b0/formal_seed43_20261012_155308/selection_predictions.csv",
+  "selection_manifest_order_matches_predictions": true,
+  "selection_probability_max_abs_difference_recomputed_from_logits": 1.728959414526443e-07,
+  "selection_log_loss_abs_difference_from_checkpoint": 1.1876533090315888e-09,
+  "selection_argmax_matches_saved": true,
+  "selection_f1_matches_checkpoint": true,
+  "temperature_preserves_classes_calibration": true,
+  "temperature_preserves_classes_selection": true,
+  "calibration_images_loaded": 990,
+  "selection_images_loaded": 0,
+  "selection_predictions_loaded_from_file": 1510,
+  "test_manifest_accessed": false,
+  "test_images_loaded": 0,
+  "test_predictions_computed": 0
+}

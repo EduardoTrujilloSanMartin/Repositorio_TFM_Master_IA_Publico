@@ -1,0 +1,85 @@
+{
+  "system": {
+    "architecture": "efficientnet_b0",
+    "checkpoint": "experiments/efficientnet_b0/formal_seed43_20261012_155308/best_checkpoint.pt",
+    "checkpoint_sha256": "cc5484fac333a3de2cd40aff03ef8faf3b27dfdcc7c89ec835a3ea5ba19605ac",
+    "training_seed": 43,
+    "checkpoint_epoch": 21,
+    "partition_seed": 2026,
+    "class_order": ["akiec", "bcc", "bkl", "df", "mel", "nv", "vasc"],
+    "temperature": 2.0841459914047333,
+    "threshold": 0.5080122603583038,
+    "acceptance_rule": "confidence >= threshold"
+  },
+  "preprocessing": {
+    "color": "RGB",
+    "input_size": [224, 224],
+    "resize_interpolation": "bilinear",
+    "resize_antialias": true,
+    "normalization_mean": [0.485, 0.456, 0.406],
+    "normalization_std": [0.229, 0.224, 0.225],
+    "accepted_file_formats": ["JPEG", "PNG"],
+    "maximum_upload_bytes": 26214400
+  },
+  "inference": {
+    "device": "cuda:0",
+    "model_mode": "eval",
+    "automatic_mixed_precision": false,
+    "probability_tolerance_absolute": 0.00001,
+    "forward_batch_shape": 32,
+    "batch_shape_method": "repeat the single uploaded or selected image 32 times and use row zero",
+    "reason": "reproduce the CUDA batch shape used by the frozen final evaluator",
+    "cost_note": "computes 32 copies for one requested image; benchmark separately from protocol batch-one latency"
+  },
+  "gradcam": {
+    "target_layer": "features.8.0",
+    "target": "pre_softmax_logit_of_predicted_class",
+    "normalization": "per-map min-max after ReLU",
+    "overlay_opacity": 0.4
+  },
+  "validation": {
+    "selected_examples": "experiments/subgroups_gradcam/primary_test_20261021_162747/selected_examples.csv",
+    "saved_predictions": "experiments/final_evaluation/primary_seed43_epoch21_20261021_155351/test_predictions_complete.csv",
+    "selected_count": 39
+  },
+  "latency": {
+    "warmup_iterations": 20,
+    "measured_iterations": 100,
+    "batch_size_protocol": 1,
+    "cuda_synchronize": true,
+    "representative_rule": "selection F1 macro closest to architecture median; lower seed on tie",
+    "architectures": {
+      "cnn_simple": {
+        "seed": 17,
+        "epoch": 19,
+        "checkpoint": "experiments/cnn_simple/formal_seed17_20261012_145054/best_checkpoint.pt",
+        "checkpoint_sha256": "f46291c3f09e4e285aa5aae3012405722069698e64935580af2feeb4cabe45c2",
+        "selection_f1_macro": 0.3954119165611748,
+        "target_layer": "features.12"
+      },
+      "mobilenet_v3_small": {
+        "seed": 29,
+        "epoch": 20,
+        "checkpoint": "experiments/mobilenet_v3_small/formal_seed29_20261012_152346/best_checkpoint.pt",
+        "checkpoint_sha256": "666e5591248e5afea3e1aa4d77a54a160e56ebe271b14a41260049d7f1234e64",
+        "selection_f1_macro": 0.6557961855162536,
+        "target_layer": "features.12.0"
+      },
+      "efficientnet_b0": {
+        "seed": 43,
+        "epoch": 21,
+        "checkpoint": "experiments/efficientnet_b0/formal_seed43_20261012_155308/best_checkpoint.pt",
+        "checkpoint_sha256": "cc5484fac333a3de2cd40aff03ef8faf3b27dfdcc7c89ec835a3ea5ba19605ac",
+        "selection_f1_macro": 0.6824085658927957,
+        "target_layer": "features.8.0"
+      }
+    }
+  },
+  "scope": {
+    "training": false,
+    "recalibration": false,
+    "threshold_adaptation": false,
+    "full_test_inference": false,
+    "word_modified": false
+  }
+}

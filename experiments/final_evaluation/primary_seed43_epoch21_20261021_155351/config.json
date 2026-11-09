@@ -1,0 +1,59 @@
+{
+  "system": {
+    "architecture": "efficientnet_b0",
+    "loss_during_training": "weighted_cross_entropy",
+    "training_seed": 43,
+    "checkpoint_epoch": 21,
+    "checkpoint": "experiments/efficientnet_b0/formal_seed43_20261012_155308/best_checkpoint.pt",
+    "checkpoint_sha256": "cc5484fac333a3de2cd40aff03ef8faf3b27dfdcc7c89ec835a3ea5ba19605ac",
+    "class_order": ["akiec", "bcc", "bkl", "df", "mel", "nv", "vasc"]
+  },
+  "frozen_calibration": {
+    "temperature_source": "experiments/calibration_abstention/primary_seed43_epoch21_20261019_171549/temperature_fit.json",
+    "temperature_source_sha256": "d80789ce27ef5eac78ad69905fcb31e5199c50c56fa7ef20e5a1f3590634cf93",
+    "temperature": 2.0841459914047333,
+    "threshold_source": "experiments/calibration_abstention/primary_seed43_epoch21_20261019_171549/abstention_rule.json",
+    "threshold_source_sha256": "cf6bcf2868645e0bde3f82678a97588cf8d76502bfd5a77422cd62a12a6d97db",
+    "threshold": 0.5080122603583038,
+    "acceptance_rule": "confidence_greater_than_or_equal_to_threshold"
+  },
+  "data": {
+    "test_manifest": "data/manifests/ham10000_v1_seed2026/test.csv",
+    "test_manifest_sha256": "0c51fd2ca5c6ec39bf145eedd7dfcaef841b877ef9a5b0cae677a91de8fc7dd7",
+    "partition_seed": 2026,
+    "preprocessing": {
+      "color": "RGB",
+      "input_size": [224, 224],
+      "resize_interpolation": "bilinear",
+      "resize_antialias": true,
+      "normalization_mean": [0.485, 0.456, 0.406],
+      "normalization_std": [0.229, 0.224, 0.225]
+    }
+  },
+  "evaluation": {
+    "batch_size": 32,
+    "num_workers": 4,
+    "deterministic_algorithms": true,
+    "ece_bins": 15,
+    "ece_bin_type": "equal_width",
+    "brier": "mean_per_image_sum_over_7_classes_squared_error",
+    "lesion_analysis": "mean_calibrated_probabilities_of_images_per_lesion_before_argmax",
+    "auroc": "one_vs_rest_using_calibrated_probabilities",
+    "bootstrap": {
+      "unit": "lesion_id",
+      "resamples": 1000,
+      "seed": 2027,
+      "confidence_level": 0.95,
+      "sampling": "lesions_with_replacement_keep_all_images_and_multiplicity"
+    }
+  },
+  "scope": {
+    "allowed_partition": "test",
+    "single_logit_extraction": true,
+    "training": false,
+    "recalibration": false,
+    "threshold_adaptation": false,
+    "grad_cam": false,
+    "demonstrator": false
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "checkpoint_principal_incluido": true,
+  "checkpoint_sha256": "cc5484fac333a3de2cd40aff03ef8faf3b27dfdcc7c89ec835a3ea5ba19605ac",
+  "imagenes_originales_incluidas": false,
+  "preparacion_imagenes": "Descargar los archivos oficiales y ejecutar preparar_imagenes.py sin regenerar particiones.",
+  "verificacion_inferencia_modelo": "No ejecutada por este empaquetador. Requiere dependencias, GPU CUDA e imágenes.",
+  "pesos_otras_arquitecturas_incluidos": false
+}

@@ -1,0 +1,37 @@
+variant,variant_label,seed,destination,false_negative_count,melanoma_support,fraction_of_all_melanoma
+unweighted,Sin ponderación,17,akiec,5,159,0.031446540880503145
+unweighted,Sin ponderación,17,bcc,3,159,0.018867924528301886
+unweighted,Sin ponderación,17,bkl,12,159,0.07547169811320754
+unweighted,Sin ponderación,17,df,1,159,0.006289308176100629
+unweighted,Sin ponderación,17,nv,42,159,0.2641509433962264
+unweighted,Sin ponderación,17,vasc,0,159,0.0
+unweighted,Sin ponderación,29,akiec,5,159,0.031446540880503145
+unweighted,Sin ponderación,29,bcc,4,159,0.025157232704402517
+unweighted,Sin ponderación,29,bkl,8,159,0.050314465408805034
+unweighted,Sin ponderación,29,df,2,159,0.012578616352201259
+unweighted,Sin ponderación,29,nv,49,159,0.3081761006289308
+unweighted,Sin ponderación,29,vasc,0,159,0.0
+unweighted,Sin ponderación,43,akiec,6,159,0.03773584905660377
+unweighted,Sin ponderación,43,bcc,3,159,0.018867924528301886
+unweighted,Sin ponderación,43,bkl,14,159,0.0880503144654088
+unweighted,Sin ponderación,43,df,1,159,0.006289308176100629
+unweighted,Sin ponderación,43,nv,42,159,0.2641509433962264
+unweighted,Sin ponderación,43,vasc,0,159,0.0
+weighted,Ponderada,17,akiec,9,159,0.05660377358490566
+weighted,Ponderada,17,bcc,5,159,0.031446540880503145
+weighted,Ponderada,17,bkl,11,159,0.06918238993710692
+weighted,Ponderada,17,df,2,159,0.012578616352201259
+weighted,Ponderada,17,nv,31,159,0.1949685534591195
+weighted,Ponderada,17,vasc,0,159,0.0
+weighted,Ponderada,29,akiec,6,159,0.03773584905660377
+weighted,Ponderada,29,bcc,2,159,0.012578616352201259
+weighted,Ponderada,29,bkl,21,159,0.1320754716981132
+weighted,Ponderada,29,df,1,159,0.006289308176100629
+weighted,Ponderada,29,nv,33,159,0.20754716981132076
+weighted,Ponderada,29,vasc,0,159,0.0
+weighted,Ponderada,43,akiec,3,159,0.018867924528301886
+weighted,Ponderada,43,bcc,5,159,0.031446540880503145
+weighted,Ponderada,43,bkl,14,159,0.0880503144654088
+weighted,Ponderada,43,df,4,159,0.025157232704402517
+weighted,Ponderada,43,nv,26,159,0.16352201257861634
+weighted,Ponderada,43,vasc,0,159,0.0

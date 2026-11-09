@@ -1,0 +1,155 @@
+variable,group,class,support,predicted_positive,true_positive,precision,recall,f1,metrics_estimable,reason_if_not_estimable,group_lesions,scarce_group
+age_group,<40,akiec,0,0,0,,,,False,no hay casos reales de la clase en el grupo,200,False
+age_group,<40,bcc,2,3,2,0.6666666666666666,1.0,0.8,True,,200,False
+age_group,<40,bkl,9,18,8,0.4444444444444444,0.8888888888888888,0.5925925925925926,True,,200,False
+age_group,<40,df,4,7,1,0.14285714285714285,0.25,0.18181818181818182,True,,200,False
+age_group,<40,mel,9,31,3,0.0967741935483871,0.3333333333333333,0.15000000000000002,True,,200,False
+age_group,<40,nv,264,228,221,0.9692982456140351,0.8371212121212122,0.8983739837398375,True,,200,False
+age_group,<40,vasc,2,3,2,0.6666666666666666,1.0,0.8,True,,200,False
+age_group,40-59,akiec,15,10,8,0.8,0.5333333333333333,0.64,True,,538,False
+age_group,40-59,bcc,12,15,8,0.5333333333333333,0.6666666666666666,0.5925925925925926,True,,538,False
+age_group,40-59,bkl,26,39,15,0.38461538461538464,0.5769230769230769,0.46153846153846156,True,,538,False
+age_group,40-59,df,7,11,6,0.5454545454545454,0.8571428571428571,0.6666666666666665,True,,538,False
+age_group,40-59,mel,60,72,34,0.4722222222222222,0.5666666666666667,0.5151515151515152,True,,538,False
+age_group,40-59,nv,522,493,466,0.9452332657200812,0.89272030651341,0.9182266009852217,True,,538,False
+age_group,40-59,vasc,15,17,15,0.8823529411764706,1.0,0.9375,True,,538,False
+age_group,>=60,akiec,30,25,12,0.48,0.4,0.4363636363636364,True,,378,False
+age_group,>=60,bcc,67,75,56,0.7466666666666667,0.835820895522388,0.7887323943661971,True,,378,False
+age_group,>=60,bkl,121,118,82,0.6949152542372882,0.6776859504132231,0.6861924686192469,True,,378,False
+age_group,>=60,df,7,10,3,0.3,0.42857142857142855,0.3529411764705882,True,,378,False
+age_group,>=60,mel,94,108,65,0.6018518518518519,0.6914893617021277,0.6435643564356436,True,,378,False
+age_group,>=60,nv,226,209,179,0.8564593301435407,0.7920353982300885,0.8229885057471265,True,,378,False
+age_group,>=60,vasc,2,2,2,1.0,1.0,1.0,True,,378,False
+age_group,unknown,akiec,0,0,0,,,,False,no hay casos reales de la clase en el grupo,5,True
+age_group,unknown,bcc,0,0,0,,,,False,no hay casos reales de la clase en el grupo,5,True
+age_group,unknown,bkl,2,2,2,1.0,1.0,1.0,True,,5,True
+age_group,unknown,df,0,0,0,,,,False,no hay casos reales de la clase en el grupo,5,True
+age_group,unknown,mel,0,0,0,,,,False,no hay casos reales de la clase en el grupo,5,True
+age_group,unknown,nv,3,3,3,1.0,1.0,1.0,True,,5,True
+age_group,unknown,vasc,0,0,0,,,,False,no hay casos reales de la clase en el grupo,5,True
+sex,female,akiec,16,8,7,0.875,0.4375,0.5833333333333334,True,,501,False
+sex,female,bcc,25,34,24,0.7058823529411765,0.96,0.8135593220338982,True,,501,False
+sex,female,bkl,73,80,56,0.7,0.7671232876712328,0.7320261437908496,True,,501,False
+sex,female,df,12,15,8,0.5333333333333333,0.6666666666666666,0.5925925925925926,True,,501,False
+sex,female,mel,72,81,40,0.49382716049382713,0.5555555555555556,0.5228758169934641,True,,501,False
+sex,female,nv,465,442,408,0.9230769230769231,0.8774193548387097,0.8996692392502756,True,,501,False
+sex,female,vasc,16,19,16,0.8421052631578947,1.0,0.9142857142857143,True,,501,False
+sex,male,akiec,29,27,13,0.48148148148148145,0.4482758620689655,0.4642857142857143,True,,614,False
+sex,male,bcc,56,59,42,0.711864406779661,0.75,0.7304347826086958,True,,614,False
+sex,male,bkl,83,95,49,0.5157894736842106,0.5903614457831325,0.5505617977528091,True,,614,False
+sex,male,df,6,12,2,0.16666666666666666,0.3333333333333333,0.2222222222222222,True,,614,False
+sex,male,mel,91,130,62,0.47692307692307695,0.6813186813186813,0.5610859728506787,True,,614,False
+sex,male,nv,544,486,456,0.9382716049382716,0.8382352941176471,0.8854368932038836,True,,614,False
+sex,male,vasc,3,3,3,1.0,1.0,1.0,True,,614,False
+sex,unknown,akiec,0,0,0,,,,False,no hay casos reales de la clase en el grupo,6,True
+sex,unknown,bcc,0,0,0,,,,False,no hay casos reales de la clase en el grupo,6,True
+sex,unknown,bkl,2,2,2,1.0,1.0,1.0,True,,6,True
+sex,unknown,df,0,1,0,,,,False,no hay casos reales de la clase en el grupo,6,True
+sex,unknown,mel,0,0,0,,,,False,no hay casos reales de la clase en el grupo,6,True
+sex,unknown,nv,6,5,5,1.0,0.8333333333333334,0.9090909090909091,True,,6,True
+sex,unknown,vasc,0,0,0,,,,False,no hay casos reales de la clase en el grupo,6,True
+localization,abdomen,akiec,0,0,0,,,,False,no hay casos reales de la clase en el grupo,113,False
+localization,abdomen,bcc,5,2,1,0.5,0.2,0.28571428571428575,True,,113,False
+localization,abdomen,bkl,7,7,6,0.8571428571428571,0.8571428571428571,0.8571428571428571,True,,113,False
+localization,abdomen,df,0,2,0,,,,False,no hay casos reales de la clase en el grupo,113,False
+localization,abdomen,mel,3,7,1,0.14285714285714285,0.3333333333333333,0.2,True,,113,False
+localization,abdomen,nv,126,123,119,0.967479674796748,0.9444444444444444,0.9558232931726908,True,,113,False
+localization,abdomen,vasc,3,3,3,1.0,1.0,1.0,True,,113,False
+localization,acral,akiec,0,0,0,,,,False,no hay casos reales de la clase en el grupo,1,True
+localization,acral,bcc,0,0,0,,,,False,no hay casos reales de la clase en el grupo,1,True
+localization,acral,bkl,0,0,0,,,,False,no hay casos reales de la clase en el grupo,1,True
+localization,acral,df,0,0,0,,,,False,no hay casos reales de la clase en el grupo,1,True
+localization,acral,mel,0,0,0,,,,False,no hay casos reales de la clase en el grupo,1,True
+localization,acral,nv,1,1,1,1.0,1.0,1.0,True,,1,True
+localization,acral,vasc,0,0,0,,,,False,no hay casos reales de la clase en el grupo,1,True
+localization,back,akiec,8,3,3,1.0,0.375,0.5454545454545454,True,,236,False
+localization,back,bcc,26,29,22,0.7586206896551724,0.8461538461538461,0.8,True,,236,False
+localization,back,bkl,30,37,17,0.4594594594594595,0.5666666666666667,0.5074626865671642,True,,236,False
+localization,back,df,0,5,0,,,,False,no hay casos reales de la clase en el grupo,236,False
+localization,back,mel,47,80,34,0.425,0.723404255319149,0.5354330708661418,True,,236,False
+localization,back,nv,230,187,175,0.9358288770053476,0.7608695652173914,0.8393285371702639,True,,236,False
+localization,back,vasc,5,5,5,1.0,1.0,1.0,True,,236,False
+localization,chest,akiec,1,0,0,0.0,0.0,0.0,True,,38,False
+localization,chest,bcc,12,14,12,0.8571428571428571,1.0,0.923076923076923,True,,38,False
+localization,chest,bkl,5,10,5,0.5,1.0,0.6666666666666666,True,,38,False
+localization,chest,df,0,0,0,,,,False,no hay casos reales de la clase en el grupo,38,False
+localization,chest,mel,13,11,8,0.7272727272727273,0.6153846153846154,0.6666666666666667,True,,38,False
+localization,chest,nv,27,23,21,0.9130434782608695,0.7777777777777778,0.84,True,,38,False
+localization,chest,vasc,1,1,1,1.0,1.0,1.0,True,,38,False
+localization,ear,akiec,0,0,0,,,,False,no hay casos reales de la clase en el grupo,2,True
+localization,ear,bcc,0,0,0,,,,False,no hay casos reales de la clase en el grupo,2,True
+localization,ear,bkl,0,0,0,,,,False,no hay casos reales de la clase en el grupo,2,True
+localization,ear,df,0,0,0,,,,False,no hay casos reales de la clase en el grupo,2,True
+localization,ear,mel,0,0,0,,,,False,no hay casos reales de la clase en el grupo,2,True
+localization,ear,nv,5,5,5,1.0,1.0,1.0,True,,2,True
+localization,ear,vasc,0,0,0,,,,False,no hay casos reales de la clase en el grupo,2,True
+localization,face,akiec,14,14,8,0.5714285714285714,0.5714285714285714,0.5714285714285714,True,,62,False
+localization,face,bcc,17,16,12,0.75,0.7058823529411765,0.7272727272727272,True,,62,False
+localization,face,bkl,29,34,25,0.7352941176470589,0.8620689655172413,0.7936507936507937,True,,62,False
+localization,face,df,0,1,0,,,,False,no hay casos reales de la clase en el grupo,62,False
+localization,face,mel,20,17,12,0.7058823529411765,0.6,0.6486486486486486,True,,62,False
+localization,face,nv,19,15,12,0.8,0.631578947368421,0.7058823529411765,True,,62,False
+localization,face,vasc,1,3,1,0.3333333333333333,1.0,0.5,True,,62,False
+localization,foot,akiec,0,0,0,,,,False,no hay casos reales de la clase en el grupo,37,False
+localization,foot,bcc,0,0,0,,,,False,no hay casos reales de la clase en el grupo,37,False
+localization,foot,bkl,1,3,0,0.0,0.0,0.0,True,,37,False
+localization,foot,df,0,3,0,,,,False,no hay casos reales de la clase en el grupo,37,False
+localization,foot,mel,3,6,2,0.3333333333333333,0.6666666666666666,0.4444444444444444,True,,37,False
+localization,foot,nv,52,44,43,0.9772727272727273,0.8269230769230769,0.8958333333333334,True,,37,False
+localization,foot,vasc,0,0,0,,,,False,no hay casos reales de la clase en el grupo,37,False
+localization,genital,akiec,0,0,0,,,,False,no hay casos reales de la clase en el grupo,6,True
+localization,genital,bcc,0,0,0,,,,False,no hay casos reales de la clase en el grupo,6,True
+localization,genital,bkl,2,2,2,1.0,1.0,1.0,True,,6,True
+localization,genital,df,0,0,0,,,,False,no hay casos reales de la clase en el grupo,6,True
+localization,genital,mel,0,0,0,,,,False,no hay casos reales de la clase en el grupo,6,True
+localization,genital,nv,5,5,5,1.0,1.0,1.0,True,,6,True
+localization,genital,vasc,0,0,0,,,,False,no hay casos reales de la clase en el grupo,6,True
+localization,hand,akiec,1,0,0,0.0,0.0,0.0,True,,8,True
+localization,hand,bcc,0,1,0,,,,False,no hay casos reales de la clase en el grupo,8,True
+localization,hand,bkl,2,1,1,1.0,0.5,0.6666666666666666,True,,8,True
+localization,hand,df,0,0,0,,,,False,no hay casos reales de la clase en el grupo,8,True
+localization,hand,mel,0,0,0,,,,False,no hay casos reales de la clase en el grupo,8,True
+localization,hand,nv,6,7,6,0.8571428571428571,1.0,0.923076923076923,True,,8,True
+localization,hand,vasc,1,1,1,1.0,1.0,1.0,True,,8,True
+localization,lower extremity,akiec,12,10,6,0.6,0.5,0.5454545454545454,True,,258,False
+localization,lower extremity,bcc,3,7,2,0.2857142857142857,0.6666666666666666,0.4,True,,258,False
+localization,lower extremity,bkl,33,40,23,0.575,0.696969696969697,0.6301369863013698,True,,258,False
+localization,lower extremity,df,15,11,8,0.7272727272727273,0.5333333333333333,0.6153846153846153,True,,258,False
+localization,lower extremity,mel,42,44,25,0.5681818181818182,0.5952380952380952,0.5813953488372093,True,,258,False
+localization,lower extremity,nv,228,221,200,0.9049773755656109,0.8771929824561403,0.89086859688196,True,,258,False
+localization,lower extremity,vasc,1,1,1,1.0,1.0,1.0,True,,258,False
+localization,neck,akiec,3,1,1,1.0,0.3333333333333333,0.5,True,,13,True
+localization,neck,bcc,2,5,2,0.4,1.0,0.5714285714285715,True,,13,True
+localization,neck,bkl,5,4,2,0.5,0.4,0.4444444444444445,True,,13,True
+localization,neck,df,0,1,0,,,,False,no hay casos reales de la clase en el grupo,13,True
+localization,neck,mel,6,4,3,0.75,0.5,0.6,True,,13,True
+localization,neck,nv,1,2,1,0.5,1.0,0.6666666666666666,True,,13,True
+localization,neck,vasc,1,1,1,1.0,1.0,1.0,True,,13,True
+localization,scalp,akiec,0,3,0,,,,False,no hay casos reales de la clase en el grupo,17,True
+localization,scalp,bcc,0,3,0,,,,False,no hay casos reales de la clase en el grupo,17,True
+localization,scalp,bkl,11,8,3,0.375,0.2727272727272727,0.3157894736842105,True,,17,True
+localization,scalp,df,0,0,0,,,,False,no hay casos reales de la clase en el grupo,17,True
+localization,scalp,mel,1,1,1,1.0,1.0,1.0,True,,17,True
+localization,scalp,nv,12,8,5,0.625,0.4166666666666667,0.5,True,,17,True
+localization,scalp,vasc,0,1,0,,,,False,no hay casos reales de la clase en el grupo,17,True
+localization,trunk,akiec,0,0,0,,,,False,no hay casos reales de la clase en el grupo,202,False
+localization,trunk,bcc,0,0,0,,,,False,no hay casos reales de la clase en el grupo,202,False
+localization,trunk,bkl,14,16,13,0.8125,0.9285714285714286,0.8666666666666666,True,,202,False
+localization,trunk,df,0,0,0,,,,False,no hay casos reales de la clase en el grupo,202,False
+localization,trunk,mel,8,9,4,0.4444444444444444,0.5,0.47058823529411764,True,,202,False
+localization,trunk,nv,195,192,187,0.9739583333333334,0.958974358974359,0.9664082687338502,True,,202,False
+localization,trunk,vasc,6,6,6,1.0,1.0,1.0,True,,202,False
+localization,upper extremity,akiec,6,4,2,0.5,0.3333333333333333,0.4,True,,98,False
+localization,upper extremity,bcc,14,14,13,0.9285714285714286,0.9285714285714286,0.9285714285714286,True,,98,False
+localization,upper extremity,bkl,14,11,7,0.6363636363636364,0.5,0.56,True,,98,False
+localization,upper extremity,df,3,5,2,0.4,0.6666666666666666,0.5,True,,98,False
+localization,upper extremity,mel,19,27,11,0.4074074074074074,0.5789473684210527,0.47826086956521735,True,,98,False
+localization,upper extremity,nv,79,74,65,0.8783783783783784,0.8227848101265823,0.8496732026143792,True,,98,False
+localization,upper extremity,vasc,0,0,0,,,,False,no hay casos reales de la clase en el grupo,98,False
+localization,unknown,akiec,0,0,0,,,,False,no hay casos reales de la clase en el grupo,30,False
+localization,unknown,bcc,2,2,2,1.0,1.0,1.0,True,,30,False
+localization,unknown,bkl,5,4,3,0.75,0.6,0.6666666666666665,True,,30,False
+localization,unknown,df,0,0,0,,,,False,no hay casos reales de la clase en el grupo,30,False
+localization,unknown,mel,1,5,1,0.2,1.0,0.33333333333333337,True,,30,False
+localization,unknown,nv,29,26,24,0.9230769230769231,0.8275862068965517,0.8727272727272727,True,,30,False
+localization,unknown,vasc,0,0,0,,,,False,no hay casos reales de la clase en el grupo,30,False

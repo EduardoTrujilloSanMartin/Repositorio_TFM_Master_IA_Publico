@@ -1,0 +1,13 @@
+{
+  "threshold_frozen": 0.5080122603583038,
+  "acceptance_rule": "confidence_calibrated >= threshold",
+  "threshold_adapted_on_test": false,
+  "n": 1499,
+  "coverage": 0.895930620413609,
+  "accepted": 1343,
+  "rejected": 156,
+  "accepted_errors": 220,
+  "accepted_error_rate_selective_risk": 0.16381236038719285,
+  "rejected_errors": 86,
+  "rejected_error_rate": 0.5512820512820513
+}

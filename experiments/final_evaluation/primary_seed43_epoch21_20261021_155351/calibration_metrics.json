@@ -1,0 +1,15 @@
+{
+  "before": {
+    "log_loss": 0.7289843353345837,
+    "brier_multiclass": 0.31988557252283795,
+    "ece_15_equal_width": 0.11323644179780629
+  },
+  "after": {
+    "log_loss": 0.5421152603540645,
+    "brier_multiclass": 0.28617152077299274,
+    "ece_15_equal_width": 0.025090144780295476
+  },
+  "temperature": 2.0841459914047333,
+  "predicted_classes_identical": true,
+  "classification_metric_max_abs_difference": 0.0
+}

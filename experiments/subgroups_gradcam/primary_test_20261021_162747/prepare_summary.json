@@ -1,0 +1,11 @@
+{
+  "status": "prepared",
+  "prepared_at_utc": "2026-10-21T14:27:48.201594+00:00",
+  "output_directory": "experiments/subgroups_gradcam/primary_test_20261021_162747",
+  "analysis_config_sha256": "03967e7a823f10eb0595454209266f8ef3454c4af513a3f41f10135301b8e72b",
+  "analysis_script_sha256": "a70e5de211e4987a1cbb4873d9d0371f1f647122b916f755c8ff8686f6c0a92e",
+  "selected_examples_sha256": "8c784a1d650e002954801fa618408781446c52d340502dcc3b24715da34f8640",
+  "selected_images": 39,
+  "subgroup_count": 22,
+  "scarce_groups": 8
+}

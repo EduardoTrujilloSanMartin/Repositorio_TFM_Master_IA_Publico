@@ -1,0 +1,37 @@
+{
+  "prediction_rows": 1499,
+  "metadata_rows": 10015,
+  "joined_rows": 1499,
+  "prediction_image_ids_unique": true,
+  "metadata_image_ids_unique": true,
+  "one_to_one_join": true,
+  "unmatched_predictions": 0,
+  "duplicated_after_join": 0,
+  "label_mismatches": 0,
+  "lesion_id_mismatches": 0,
+  "missing_age_kept_as_unknown": 5,
+  "missing_or_explicit_unknown_sex": 8,
+  "missing_or_explicit_unknown_localization": 37,
+  "input_hashes_verified": true,
+  "class_order_verified": true,
+  "statistics_source_only_saved_predictions": true,
+  "full_test_inference_repeated": false,
+  "selection_rule_frozen_before_gradcam": true,
+  "selection_rule": {
+    "maximum_per_true_class_and_category": 2,
+    "categories": [
+      "rejected",
+      "correct_accepted",
+      "error_accepted"
+    ],
+    "overlap_resolution": "rejected is exclusive and has priority; correct and error contain accepted cases only",
+    "ordering": "ascending image_id",
+    "lesion_priority": "within each true-class panel prefer lesion_id values not already selected; then fill deterministically if needed",
+    "duplicate_images_allowed": false,
+    "map_appeal_used_for_selection": false
+  },
+  "selected_images": 39,
+  "selected_image_ids_unique": true,
+  "selected_examples_sha256": "8c784a1d650e002954801fa618408781446c52d340502dcc3b24715da34f8640",
+  "gradcam_generated": false
+}

@@ -1,0 +1,27 @@
+{
+  "architecture": "efficientnet_b0",
+  "initialization": "IMAGENET1K_V1",
+  "input": "RGB 224x224; resize bilineal antialias",
+  "augmentation": "flip H p=0.5; flip V p=0.5; rotación uniforme 0/90/180/270",
+  "normalization": {
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "class_weights_source": "solo train.csv",
+  "optimizer": "AdamW betas=(0.9,0.999), eps=1e-8, weight_decay=0.0001",
+  "phases": "épocas 1-5 clasificador lr=0.001 con extractor eval; desde 6 ajuste completo extractor lr=0.0001 y clasificador lr=0.001; optimizador reiniciado",
+  "early_stopping": "desde época 6, paciencia 7, F1 macro de selección",
+  "best_checkpoint": "mayor F1 macro; empate menor pérdida no ponderada; después época anterior",
+  "training_seed": 43,
+  "partition_seed": 2026,
+  "calibration_used": false,
+  "test_used": false
+}

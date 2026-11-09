@@ -1,0 +1,8 @@
+{
+  "checkpoint": "cc5484fac333a3de2cd40aff03ef8faf3b27dfdcc7c89ec835a3ea5ba19605ac",
+  "temperature_source": "d80789ce27ef5eac78ad69905fcb31e5199c50c56fa7ef20e5a1f3590634cf93",
+  "threshold_source": "cf6bcf2868645e0bde3f82678a97588cf8d76502bfd5a77422cd62a12a6d97db",
+  "evaluation_config": "1c53181cde82c9bd400fc854cf4396cb6cd29f6b3174e8d1ecfe16772a5cccf2",
+  "evaluator": "670894e3479c7d95f3c2f63045cd2a48ab8e6b9b5a972597defa913135db46c3",
+  "test_manifest": "0c51fd2ca5c6ec39bf145eedd7dfcaef841b877ef9a5b0cae677a91de8fc7dd7"
+}

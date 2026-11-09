@@ -1,0 +1,6 @@
+{
+  "delta_f1_macro_unweighted_minus_weighted": 0.018406835322447874,
+  "delta_balanced_accuracy_unweighted_minus_weighted": -0.030780801038411815,
+  "delta_accuracy_unweighted_minus_weighted": 0.03311258278145698,
+  "delta_melanoma_recall_unweighted_minus_weighted": -0.05031446540880502
+}
